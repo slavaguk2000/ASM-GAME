@@ -240,8 +240,11 @@ print_horisontal:
 
 
 	
-	mov ah, 0
+	mov ah, 1
 	int 16h
+	jz ground_tp
+	xor ah, ah
+	int 16h	
 	mov dh, rotate
 	cmp ax, 4800h
 	je press_up
@@ -251,6 +254,12 @@ print_horisontal:
 	je press_left
 	cmp ax, 4D00h
 	je press_right
+ground_tp:
+	xor cx, cx
+	mov dx, 20000
+	mov ah, 86h
+	int 15h
+	jmp ground
 	
 press_up:
 	cmp dh, 0
