@@ -95,8 +95,8 @@ game_over_screen	db 219, 011h, 219, 011h, 219, 011h, 219, 011h, 219, 011h, 219, 
 	
 	
 	
-	x db 40
-	y db 5
+	x dw 25600    ;x640
+	y dw 6400		;x1280
 	speed_x db 0
 	speed_y db 0
 	boost_x db 0
@@ -112,21 +112,21 @@ jmp simple_print_car_horisontal
 game_over_point_print_car_horisontal:
 	jmp game_over_point
 simple_print_car_horisontal:
-	mov al, y
-	cmp al, 23
+	mov dx, y
+	shr dx, 4
+	cmp dx, 23*80
 	jg game_over_point_print_car_horisontal
-	cmp al, 1
+	cmp dx, 80
 	jb game_over_point_print_car_horisontal
-	dec al
-	mov ah, 80
-	mul ah
-	xor dh, dh
-	mov dl, x
-	cmp dl, 3
+	sub dx, 80
+	mov ax, x
+	mov cx, 640
+	div cx
+	cmp al, 3
 	jb game_over_point_print_car_horisontal
-	cmp dl, 74
+	cmp al, 74
 	jg game_over_point_print_car_horisontal
-	sub dl, 3
+	sub al, 3
 	add ax, dx
 	shl ax, 1
 	mov di, ax
@@ -140,7 +140,7 @@ simple_print_car_horisontal:
 	mov cx, 18
 	rep movsb ;вывод машины3	
 endm
-
+;;;;;;доделать
 print_car_vertical macro car_course
 	local game_over_point_print_car_vertical, simple_print_car_vertical
 jmp simple_print_car_vertical
@@ -311,6 +311,11 @@ move_left:
 move_right:	
 	inc x
 	jmp ground
+
+	
+move_car:
+
+
 	
 	
 game_over_point:
