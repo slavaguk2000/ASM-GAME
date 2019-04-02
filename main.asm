@@ -1,4 +1,4 @@
-    .model small
+.model small
     .stack 100h
 	.data 
     maxLength equ 200
@@ -20,7 +20,7 @@
                 db '0', 11111b, '0', 11111b, ' ', 11111b
     output_line_size equ 14
 	
-	map db ' ', 027h, ' ', 027h, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh   
+	map db ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 027h, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh   
 		db ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh
 		db ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0CCh, ' ', 0FFh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh
 		db ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0CCh, ' ', 0FFh, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 0FFh, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 088h, ' ', 0CCh, ' ', 0FFh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh, ' ', 0AAh
@@ -95,12 +95,14 @@ game_over_screen	db 219, 011h, 219, 011h, 219, 011h, 219, 011h, 219, 011h, 219, 
 	
 	
 	
-	x dw 25600    ;x640
-	y dw 6400		;x1280
+	x db 37
+	y db 5
 	speed_x db 0
 	speed_y db 0
-	boost_x db 0
-	boost_y db 0
+	speed_x_counter db 100
+	speed_y_counter db 100
+	move_x_counter db 128
+	move_y_counter db 128
 	rotate db 1
 	REGIM dw 0
 		
@@ -112,21 +114,21 @@ jmp simple_print_car_horisontal
 game_over_point_print_car_horisontal:
 	jmp game_over_point
 simple_print_car_horisontal:
-	mov dx, y
-	shr dx, 4
-	cmp dx, 23*80
+	mov al, y
+	cmp al, 23
 	jg game_over_point_print_car_horisontal
-	cmp dx, 80
+	cmp al, 1
 	jb game_over_point_print_car_horisontal
-	sub dx, 80
-	mov ax, x
-	mov cx, 640
-	div cx
-	cmp al, 3
+	dec al
+	mov ah, 80
+	mul ah
+	xor dh, dh
+	mov dl, x
+	cmp dl, 3
 	jb game_over_point_print_car_horisontal
-	cmp al, 74
+	cmp dl, 74
 	jg game_over_point_print_car_horisontal
-	sub al, 3
+	sub dl, 3
 	add ax, dx
 	shl ax, 1
 	mov di, ax
@@ -140,7 +142,57 @@ simple_print_car_horisontal:
 	mov cx, 18
 	rep movsb ;вывод машины3	
 endm
-;;;;;;доделать
+
+dec_speed_y macro dec_count
+	local dec_speed_y_end
+	sub speed_y_counter, dec_count
+	cmp speed_y_counter, 50
+	jg dec_speed_y_end
+	cmp speed_y, 0
+	jbe dec_speed_y_end
+	mov speed_y_counter, 60
+	dec speed_y
+dec_speed_y_end:
+endm
+
+inc_speed_x macro inc_count
+	local inc_speed_x_end
+	add speed_x_counter, inc_count
+	cmp speed_x_counter, 70
+	jb inc_speed_x_end
+	cmp speed_x, 20
+	jge inc_speed_x_end
+	mov speed_x_counter, 60
+	inc speed_x
+inc_speed_x_end:
+endm
+
+inc_speed_y macro inc_count
+	local inc_speed_y_end
+	add speed_y_counter, inc_count
+	cmp speed_y_counter, 70
+	jb inc_speed_y_end
+	cmp speed_y, 20
+	jge inc_speed_y_end
+	mov speed_y_counter, 60
+	inc speed_y
+inc_speed_y_end:
+endm
+	
+dec_speed_x macro dec_count
+	local dec_speed_x_end
+	sub speed_x_counter, dec_count
+	cmp speed_x_counter, 50
+	jg dec_speed_x_end
+	cmp speed_x, 0
+	jbe dec_speed_x_end
+	mov speed_x_counter, 60
+	dec speed_x
+dec_speed_x_end:
+endm
+
+
+
 print_car_vertical macro car_course
 	local game_over_point_print_car_vertical, simple_print_car_vertical
 jmp simple_print_car_vertical
@@ -183,6 +235,50 @@ simple_print_car_vertical:
 	mov cx, 10
 	rep movsb ;вывод машины5	
 endm
+
+correction_speed macro
+	mov dh, rotate
+	test dh, 1b
+	jz correction_speed_vertical
+	jmp correction_speed_horisontal
+correction_speed_vertical:
+	cmp speed_y, 10;vertical y
+	jb correction_speed_vertical_inc_y
+	je correction_speed_vertical_side
+	dec_speed_y 1
+	jmp correction_speed_vertical_side
+correction_speed_vertical_inc_y:
+	inc_speed_y 1		
+correction_speed_vertical_side:
+	cmp speed_x, 10;vertical x
+	jb correction_speed_vertical_inc_x
+	je correction_speed_vertical_end
+	dec_speed_x 5
+	jmp correction_speed_vertical_end
+correction_speed_vertical_inc_x:
+	inc_speed_x 5	
+correction_speed_vertical_end:
+	jmp correction_speed_end
+
+correction_speed_horisontal:
+	cmp speed_x, 10;horisontal x
+	jb correction_speed_horisontal_inc_x
+	je correction_speed_horisontal_side
+	dec_speed_x 1
+	jmp correction_speed_horisontal_side
+correction_speed_horisontal_inc_x:
+	inc_speed_x 1		
+correction_speed_horisontal_side:
+	cmp speed_y, 10;horisontal y
+	jb correction_speed_horisontal_inc_y
+	je correction_speed_end
+	dec_speed_y 5
+	jmp correction_speed_end
+correction_speed_horisontal_inc_y:
+	inc_speed_y 5	
+	
+correction_speed_end:
+endm
  
 start:  
     mov ax, @data
@@ -198,21 +294,74 @@ start:
     pop es
 	
 game_start:
-	mov x, 40
+	mov x, 37
 	mov y, 5
-	mov speed_x, 0
-	mov speed_y, 0
-	mov boost_x, 0
-	mov boost_y, 0
+	mov speed_x, 10
+	mov speed_y, 10	
+	mov speed_x_counter, 60
+	mov speed_y_counter, 60
+	mov move_x_counter, 60
+	mov move_y_counter, 60
 	mov rotate, 1
      
 ground:
+	correction_speed
+	mov ah, speed_x
+	sub ah, 10
+	add move_x_counter, ah
+	cmp move_x_counter, 110
+	jge move_x_add
+	cmp move_x_counter, 10
+	jg add_y
+	dec x
+	jmp move_x_done
+move_x_add:
+	inc x
+move_x_done:	
+	mov move_x_counter, 60	
+add_y:
+	mov ah, speed_y
+	sub ah, 10
+	add move_y_counter, ah
+	cmp move_y_counter, 110
+	jge move_y_add
+	cmp move_y_counter, 10
+	jg ground_print
+	dec y
+	jmp move_y_done
+move_y_add:
+	inc y
+move_y_done:	
+	mov move_y_counter, 60
+
+
+ground_print:
 	mov di, word ptr start_position
 	mov si, offset map
 	mov ah, x
 	mov [si], ah
 	mov ah, y
 	mov [si+2], ah
+	mov ah, speed_x
+	shr ah, 1
+	add ah, 48
+	mov [si+6], ah	
+	mov ah, speed_y
+	shr ah, 1
+	add ah, 48
+	mov [si+8], ah
+	mov ah, speed_x_counter
+	sub ah, 12
+	mov [si+12], ah
+	mov ah, speed_y_counter
+	sub ah, 12
+	mov [si+14], ah
+	mov ah, move_x_counter
+	sub ah, 12
+	mov [si+18], ah
+	mov ah, move_y_counter
+	sub ah, 12
+	mov [si+20], ah
 	mov cx, 4000
 	cld
 	rep movsb ;вывод карты	
@@ -256,29 +405,12 @@ print_horisontal:
 	je press_right
 ground_tp:
 	xor cx, cx
+	;mov cx, 0fh
 	mov dx, 20000
 	mov ah, 86h
 	int 15h
 	jmp ground
 	
-press_up:
-	cmp dh, 0
-	je move_up
-	cmp dh, 1
-	je move_right
-	cmp dh, 2
-	je move_down
-	cmp dh, 3
-	je move_left
-press_down:
-	cmp dh, 2
-	je move_up
-	cmp dh, 3
-	je move_right
-	cmp dh, 0
-	je move_down
-	cmp dh, 1
-	je move_left
 press_left:
 	test dh, dh
 	jnz press_left_not_zero_rotate
@@ -287,6 +419,24 @@ press_left_not_zero_rotate:
 	dec dh
 	mov rotate, dh
 	jmp ground
+press_up:
+	cmp dh, 0
+	je dec_speed_y_gas
+	cmp dh, 1
+	je inc_speed_x_gas
+	cmp dh, 2
+	je inc_speed_y_gas
+	cmp dh, 3
+	je dec_speed_x_gas_tp
+press_down:
+	cmp dh, 2
+	je dec_speed_y_gas
+	cmp dh, 3
+	je inc_speed_x_gas
+	cmp dh, 0
+	je inc_speed_y_gas
+	cmp dh, 1
+	je dec_speed_x_gas
 press_right:
 	inc dh
 	cmp dh, 4
@@ -295,27 +445,23 @@ press_right:
 press_right_not_zero_rotate:	
 	mov rotate, dh
 	jmp ground
-	
-	
-	
-	
-move_up:
-	dec y
-	jmp ground	
-move_down:
-	inc y
+dec_speed_x_gas_tp:
+	jmp dec_speed_x_gas
+dec_speed_y_gas:
+	dec_speed_y 10
 	jmp ground
-move_left:
-	dec x
+inc_speed_x_gas:
+	inc_speed_x 10
 	jmp ground
-move_right:	
-	inc x
+inc_speed_y_gas:
+	inc_speed_y 10
+	jmp ground
+dec_speed_x_gas:
+	dec_speed_x 10
 	jmp ground
 
 	
-move_car:
-
-
+	
 	
 	
 game_over_point:
@@ -345,4 +491,3 @@ game_end:
     
    
 end start
-
